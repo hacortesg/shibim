@@ -1,9 +1,12 @@
-  import React from "react";
-  import { useState, useRef, useEffect } from "react";
-  import Galery from "./Galery";
-  import Buscar from "./Buscar";
-  import Embo from "./Embo";
-  import Mision from "./Mision";
+import React from "react";
+import { useState, useRef, useEffect } from "react";
+import Galery from "./Galery";
+import Buscar from "./Buscar";
+import Embo from "./Embo";
+import Mision from "./Mision";
+import TablaRashbi from "./TablaRashbi";
+import TablaRamjal from "./TablaRamjal";
+
 //   import {NombreContext} from"../context/NombreContext";
 
 
@@ -33,34 +36,37 @@
         case 0:
           return (
             <>
+{/*              */}
               <Bar />
-              {/* <div>Este es:{busca}</div> */}
-              {/*<Buscar ref={inputRefB} handleSearch={handleSearch} />*/}
               <Galery toggle={toggle} />
-{/*
-              */}
             </>
           );
         case 1:
           return (
             <>
               <Bar />
-              <Buscar handleSearch={handleSearch} />
-              <Galery toggle={toggle} busca={busca} />
+               <Embo />
           </>
         );
         case 2:
           return (
             <>
               <Bar />
-               <Embo />
+              <Mision />
             </>
           );
         case 3:
           return (
             <>
               <Bar />
-              <Mision />
+              <TablaRashbi />
+            </>
+          );
+        case 3:
+          return (
+            <>
+              <Bar />
+              <TablaRamjal />
             </>
           );
       }
@@ -74,9 +80,10 @@
             <button className="dropdbutton">Herramientas</button>
             <div className="dropdown-content" >
               <a onClick={() => { setEntrada(0) }}>Home</a>
-              <a onClick={() => { setEntrada(1) }}>Buscar</a>
-              <a onClick={() => { setEntrada(2) }}>Shana Embolismal</a>
-              <a onClick={() => { setEntrada(3) }}>Mi Misión</a>
+              <a onClick={() => { setEntrada(1) }}>Shana Embolismal</a>
+              <a onClick={() => { setEntrada(2) }}>Mi Misión</a>
+              <a onClick={() => { setEntrada(3) }}>Tabla Rashbi</a>
+              <a onClick={() => { setEntrada(4) }}>Tabla Ramjal</a>
             </div>
           </div>
           <button onClick={onToggle}>

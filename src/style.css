@@ -53,6 +53,36 @@ h4 {
   border-radius: 5px;
 }
 
+.foot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: blue;
+  width: 100%;
+  color: white;
+  border-top: 0.1rem solid purple ;
+}
+
+.copyr{
+  float:left;
+  background: inherit;
+  color: inherit;
+}
+
+.copyr a{
+  background: inherit;
+  color: inherit;
+  border-left: 0.1rem solid white;
+  margin-left:0.3rem;
+  padding-left: 0.3rem;
+}
+
+.bh{
+  float: right;
+  background: inherit;
+  color: inherit;
+}
+
 .magen {
   background-image: url("magen.png");
   background-repeat: no-repeat;
