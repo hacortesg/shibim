@@ -62,7 +62,7 @@ import TablaRamjal from "./TablaRamjal";
               <TablaRashbi />
             </>
           );
-        case 3:
+        case 4:
           return (
             <>
               <Bar />
@@ -85,6 +85,9 @@ import TablaRamjal from "./TablaRamjal";
               <a onClick={() => { setEntrada(3) }}>Tabla Rashbi</a>
               <a onClick={() => { setEntrada(4) }}>Tabla Ramjal</a>
             </div>
+          </div>
+          <div className="bh">
+ב"ה
           </div>
           <button onClick={onToggle}>
             {toggle ? "🗄" : "🗃"}

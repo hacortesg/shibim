@@ -77,19 +77,6 @@ h4 {
   padding-left: 0.3rem;
 }
 
-.bh{
-  float: right;
-  background: inherit;
-  color: inherit;
-}
-
-.magen {
-  background-image: url("magen.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: 75% 75%;
-}
 
 p {
   background-color: blue;
@@ -206,38 +193,56 @@ p {
   color: white;
 }
 
-/* popup */
+.magen {
+  background-image: url("magen.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: 75% 75%;
+/*   z-index:7; */
+}
+
+
+/* popup modal window */
 .popup-box {
   position: fixed;
+  top: 0;
+  left: 0;
   background: #00000050;
-  width: min-content;
-  height: min-content;
-  top: 10%;
-  left: 10%;
-  z-index: 2;
+  width: 100%;
+  height: 100%;
+/*   width: min-content; */
+/*   height: min-content; */
+  z-index: 1;
 }
  
 .box {
   position: relative;
-  width: min-content;
-  height: min-content;
-  margin: 0 auto;
+/*   display: flex; */
+
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  background: none;
   /* max-height: 70vh; */
   /* margin-top: calc(100vh - 85vh - 20px); */
     /* margin: 10%; */
-  background: #fff;
+/*   background: #fff; */
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
 }
+
 .close-icon {
   content: 'x';
   cursor: pointer;
   position: absolute;
   right: calc(15% - 30px);
   top: calc(100vh - 85vh - 33px);
-  background: #ededed;
+/*   background: #ededed; */
+  background: blue;
+  color: white;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -246,6 +251,7 @@ p {
   border: 1px solid #999;
   font-size: 20px;
 }
+
 /* tooltip */
 .tooltip {
   position: relative;
@@ -289,7 +295,7 @@ p {
   /* align-content: center; */
   /* display: block; */
   justify-content: flex-end;
-  z-index: 2;
+  z-index: 5;
   width: fit-content;
   height: fit-content;
   /* background-repeat: no-repeat; */
@@ -321,7 +327,7 @@ p {
   height: 10%;
 /*   border-radius: 0.5rem; */
 /*   width: 20%; */
-  z-index: 4;
+  z-index: 7;
 }
 .showhebrew img {
   background:#0000ff;
@@ -398,7 +404,7 @@ p {
 /*   filter: hue-rotate(90deg); */
 
   width: 25%;
-  z-index: 3;
+  z-index: 2;
   /* background-color: indigo; */
 /*   background-color: hsla(274, 100%, 51%, 0.1); */
   background: #2b0c86;
@@ -485,25 +491,30 @@ p {
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
 /*   top: 0.4rem; */
 /*   position:fixed; */
-  top: 0.3rem;
-  left: 0.3rem;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: min-content;
-  background-color: indigo;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  height: max-content;
+  background: indigo;
+  color: white;
+  margin-bottom: 0.2rem solid yellow;
+/*   display: flex; */
+/*   flex-direction: row; */
+/*   justify-content: space-between; */
+/*   align-items: center; */
+  z-index: 3;
 }
 
 /* .nav .dropdbutton{
   text-align: center;
 } */
 .nav button {
-  text-align: center;
+  float: right;
+  margin-right: 0.1rem;
+/*   text-align: center; */
   /* height: 2rem; */
   /* width: 2rem; */
 }
@@ -512,6 +523,13 @@ p {
   background-color: rgb(199, 199, 247);
 }
 
+.bh{
+  float: right;
+  background: inherit;
+  color: inherit;
+}
+
+
 .busca{
   position: sticky;
   top: 2rem;
@@ -519,7 +537,7 @@ p {
   display: flex;
   background-color: lightgray;
   border-radius: 0.4rem;
-  margin: 1rem;
+  margin: 3em 1rem 0.2rem 1rem;
   height: 2rem;
   width: 90% ;
 }

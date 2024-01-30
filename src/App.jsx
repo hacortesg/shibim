@@ -1,7 +1,8 @@
 // import './App.css'
-import { useState, useEffect} from 'react';
-import Galery from './components/Galery';
-import NavBar from './components/NavBar';
+import { useState, useEffect} from "react";
+import Galery from "./components/Galery";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer"
 //import {getWH} from "./components/utils";
 
 // import Profile from './components/Profile';
@@ -46,6 +47,7 @@ function App() {
   return (
     <>
       <NavBar onToggle={onToggle} toggle={toggle} />
+      <Footer />
       {/* <Galery toggle={toggle}/> */}
     </>
   )
