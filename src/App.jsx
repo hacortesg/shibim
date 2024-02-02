@@ -48,7 +48,7 @@ function App() {
     <>
       <NavBar onToggle={onToggle} toggle={toggle} />
       <Footer />
-      {/* <Galery toggle={toggle}/> */}
+      {console.log(width)}
     </>
   )
 }

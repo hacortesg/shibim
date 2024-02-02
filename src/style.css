@@ -89,11 +89,11 @@ p {
   width: min-content;
   /* height: max-content; */
   border-style: solid;
-  border-width: 0.5rem;
-  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-radius: 0.7rem;
   border-color: lightgray;
-  padding: 1rem;
-  margin: 1.5rem;
+  padding: 0.3rem;
+  margin: 1rem;
   background-color: blue;
   box-shadow: 0.5rem 0.9rem 18px gray;
   /* box-shadow: 0 1px 4px rgba(0,0,0,0.12) 0 1px 3px rgba(0,0,0,0.24); */
@@ -378,6 +378,7 @@ p {
 /*   width: 20%; */
   z-index: 4;
 }
+
 .lightmeta img{
 /*   background: #2b0c86; */
   background:#0000ff;
@@ -432,13 +433,6 @@ p {
   /* z-index: 2; */
 }
 
-@keyframes sobre {
-  from {
-    box-shadow: 0.5rem 0.9rem 18px gray;
-  }
-
-  to {}
-}
 
 .dropdbutton {
   /* position: relative; */
@@ -513,7 +507,7 @@ p {
 } */
 .nav button {
   float: right;
-  margin-right: 0.1rem;
+  margin: 0.4rem 0.4rem 0 0;
 /*   text-align: center; */
   /* height: 2rem; */
   /* width: 2rem; */
@@ -553,6 +547,7 @@ p {
   padding: 0.5rem;
   margin: 0.5rem;
 }
+
 .labelE {
   display: block;
   background: inherit;
@@ -570,6 +565,7 @@ p {
   border-radius: 0.3rem;
   border: solid blue;
 }
+
 .msgtext {
 /*   display: flex; */
   display: block;
@@ -612,4 +608,36 @@ p {
 	font-weight: bold;
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (max-width: 480px) {
+  .card{
+    margin: 0.3rem;
+  }
+  .popup-box{
+/*     position: fixed; */
+/*     top: 0; */
+/*     left: 0; */
+/*     width:60%; */
+/*     height: 60%; */
+/*     margin:0; */
+  }
+  .box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2rem 0 0 0;
+    padding:0;
+
+  }
+  .boxmg{
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@keyframes sobre {
+  from {
+    box-shadow: 0.5rem 0.9rem 18px gray;
+  }
+
+  to {}
+}

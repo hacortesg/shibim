@@ -8,7 +8,7 @@ function Magen({ pos, ooMagen, origen }) {
 	const [otiot, setOtiot] = useState(getOtiot(pos, origen));//ImgMagen(pos));
 	const [otiotL, setOtiotL] = useState(getLightOtiot(pos, origen));
   const [light, setLight] = useState(false);
-	const [autor, setAutor] = useState("");
+// 	const [author, setAuthor] = useState("");
 // 	const hovRef = useRef(null);
 
 	function handleMEnter(){
@@ -99,7 +99,7 @@ function ModalMagen(){
     <div className='popup-box' >
       <div className='box' >
         <button className="close-icon" onClick={() => { ooMagen(null) }}>&#x2716;</button>
-				<img src={mouseE}
+				<img className="boxmg" src={mouseE}
 					alt="magen"
 					onMouseEnter={handleMEnter}
 					onMouseOut={handleMOut}
