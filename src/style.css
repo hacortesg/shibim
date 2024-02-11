@@ -632,6 +632,24 @@ p {
     width: 320px;
     height: 320px;
   }
+
+  .formE {
+    width: 100%;
+  }
+  .showhebrew {
+    display: flex;
+    left: 30%;
+    top: 34%;
+    width: 10px;
+    height: 10px;
+  }
+  .lighthebrew{
+    display: flex;
+    left: 30%;
+    top: 34%;
+    width: auto;
+    height: 10px;
+  }
 }
 
 @keyframes sobre {
