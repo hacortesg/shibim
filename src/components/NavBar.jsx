@@ -86,12 +86,14 @@ import TablaRamjal from "./TablaRamjal";
               <a onClick={() => { setEntrada(4) }}>Tabla Ramjal</a>
             </div>
           </div>
-          <div className="bh">
-ב"ה
+          <div className="navr">
+            <button onClick={onToggle}>
+              {toggle ? "🗄" : "🗃"}
+            </button>
+            <div className="bh">
+  ב"ה
+            </div>
           </div>
-          <button onClick={onToggle}>
-            {toggle ? "🗄" : "🗃"}
-          </button>
         </div>
 
       );

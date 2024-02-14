@@ -494,7 +494,7 @@ p {
   height: max-content;
   background: indigo;
   color: white;
-  margin-bottom: 0.2rem solid yellow;
+  margin-bottom: 0.2rem solid white;
 /*   display: flex; */
 /*   flex-direction: row; */
 /*   justify-content: space-between; */
@@ -505,21 +505,28 @@ p {
 /* .nav .dropdbutton{
   text-align: center;
 } */
-.nav button {
+.navr{
   float: right;
-  margin: 0.4rem 0.4rem 0 0;
+  display: flex;
+  align-content:center;
+  background: indigo;
+
+}
+.navr button {
+  margin: 0.2rem 0.2rem 0 0;
+  padding: 0.2rem;
 /*   text-align: center; */
   /* height: 2rem; */
   /* width: 2rem; */
 }
 
-.nav button:hover {
+.navr button:hover {
   background-color: rgb(199, 199, 247);
 }
 
 .bh{
-  float: right;
-  background: inherit;
+  float: left;
+  background: indigo;
   color: inherit;
 }
 
@@ -636,19 +643,44 @@ p {
   .formE {
     width: 100%;
   }
+
   .showhebrew {
-    display: flex;
-    left: 30%;
-    top: 34%;
-    width: 10px;
-    height: 10px;
+    left: 34%;
+    top: 35%;
   }
-  .lighthebrew{
-    display: flex;
-    left: 30%;
-    top: 34%;
+  .showhebrew img{
     width: auto;
-    height: 10px;
+    height: 5rem;
+  }
+
+  .lighthebrew{
+    left: 34%;
+    top: 35%;
+  }
+
+  .lighthebrew img{
+    width: auto;
+    height: 5rem;
+  }
+
+  .showmeta{
+    left:32%;
+    top: 41%
+  }
+
+  .showmeta img{
+    width: auto;
+    height: 3.2rem;
+  }
+
+  .lightmeta{
+    left:32%;
+    top: 40%
+  }
+
+  .lightmeta img{
+    width: auto;
+    height: 3.5rem;
   }
 }
 
