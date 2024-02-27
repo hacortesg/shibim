@@ -66,6 +66,34 @@ export function getLightOtiot(id, origin){
 		lite
 	);
 }
+//******** Devuelve tabla con los nmbres
+export function getGridN(path, author){
+		let otiot = {f:"", m:"", i:""};
+		let hebreo = "";
+
+		const rendNames = shore.map(it => {
+			if(author === "Rashbi"){
+				hebreo = it.nombre;
+			}
+			if(author === "Ramjal"){
+				hebreo = it.ramjal;
+			}
+			otiot.f = path + hebreo.slice(-1) + ".png";
+			otiot.m = path + hebreo.slice(1,2) + ".png";
+			otiot.i = path + hebreo.slice(0,1) + ".png";
+			return(
+				<div key={it.id} className="ithebrew">
+					<img src={otiot.f} alt="sof"/>
+					<img src={otiot.m} alt="betoj"/>
+					<img src={otiot.i} alt="hithil"/>
+				</div>
+			);
+		});
+
+		return <div>{rendNames}</div>
+	}
+
+
 
 export function isEmbo(year) {
   let flag = false;

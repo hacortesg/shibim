@@ -2,10 +2,11 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import Galery from "./Galery";
 import Buscar from "./Buscar";
-import Embo from "./Embo";
 import Mision from "./Mision";
-import TablaRashbi from "./TablaRashbi";
-import TablaRamjal from "./TablaRamjal";
+import GridRashbi from "./GridRashbi";
+import GridRamjal from "./GridRamjal";
+import GridMeta from "./GridMeta";
+import Embo from "./Embo";
 
 //   import {NombreContext} from"../context/NombreContext";
 
@@ -45,28 +46,35 @@ import TablaRamjal from "./TablaRamjal";
           return (
             <>
               <Bar />
-               <Embo />
+              <Mision />
           </>
         );
         case 2:
           return (
             <>
               <Bar />
-              <Mision />
+              <GridRashbi />
             </>
           );
         case 3:
           return (
             <>
               <Bar />
-              <TablaRashbi />
+              <GridRamjal />
             </>
           );
         case 4:
           return (
             <>
               <Bar />
-              <TablaRamjal />
+              <GridMeta />
+            </>
+          );
+        case 5:
+          return (
+            <>
+              <Bar />
+               <Embo />
             </>
           );
       }
@@ -80,10 +88,11 @@ import TablaRamjal from "./TablaRamjal";
             <button className="dropdbutton">Herramientas</button>
             <div className="dropdown-content" >
               <a onClick={() => { setEntrada(0) }}>Home</a>
-              <a onClick={() => { setEntrada(1) }}>Shana Embolismal</a>
-              <a onClick={() => { setEntrada(2) }}>Mi Misión</a>
-              <a onClick={() => { setEntrada(3) }}>Tabla Rashbi</a>
-              <a onClick={() => { setEntrada(4) }}>Tabla Ramjal</a>
+              <a onClick={() => { setEntrada(1) }}>Mi Misión</a>
+              <a onClick={() => { setEntrada(2) }}>Tabla Rashbi</a>
+              <a onClick={() => { setEntrada(3) }}>Tabla Ramjal</a>
+              <a onClick={() => { setEntrada(4) }}>Tabla Metatron</a>
+              <a onClick={() => { setEntrada(5) }}>Shana Embolismal</a>
             </div>
           </div>
           <div className="navr">

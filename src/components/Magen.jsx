@@ -16,8 +16,8 @@ function Magen({ pos, ooMagen, origen }) {
 // traer letras del otiot con pos
 		setOtiotL(getLightOtiot(pos, origen));
 // 		setOtiot("");
-		console.log(`Origen de la magen ${origen}`);
-		console.log("hoveeer " + otiotL.i + " " + otiotL.m + " " + otiotL.f);
+// 		console.log(`Origen de la magen ${origen}`);
+// 		console.log("hoveeer " + otiotL.i + " " + otiotL.m + " " + otiotL.f);
 		setMouseE("imgutils/magenBlueLit.png");
 	}
 

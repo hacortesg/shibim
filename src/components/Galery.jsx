@@ -20,7 +20,7 @@ function Galery({ toggle}) { //BUSCA toggle para vista listado o Tarjetas
   // console.log(`este es ${search}`);
   function ooMagen(orden, origen) {
     // e.stopPropagation();
-    console.log(`Este es el autor ${autor}`);
+//     console.log(`Este es el autor ${autor}`);
     setPos(orden);
 		setAutor(origen);
     setMagen(!magen);
@@ -33,13 +33,13 @@ function Galery({ toggle}) { //BUSCA toggle para vista listado o Tarjetas
 
   function Names() {
     setSearch(search.toString().toLowerCase());
-    console.log(search);
+//     console.log(search);
 
     let found = list;
 // if(!!search)
     if (search !== "") {
       found = list.filter((item) => {return item.funcion.toString().toLowerCase().includes(search) || item.ver.toString().toLowerCase().includes(search)});
-      console.log(`Longitud: ${found.length}`);
+//       console.log(`Longitud: ${found.length}`);
       if (found.length === 0 ) {
         found = list.filter((item) => {return item.id === 31});
         // Si no encuentra coincidencias devuelve nombre q sirve para todo. found = list[30];
@@ -62,7 +62,7 @@ function Galery({ toggle}) { //BUSCA toggle para vista listado o Tarjetas
         />
       );
     }
-    )
+    );
     return (cardNames);
   }
 

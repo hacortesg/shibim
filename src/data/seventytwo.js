@@ -642,7 +642,7 @@ export const seventyTwo = [
 		id: 72,
 		nombre: 'מום',
 		ramjal: 'מהם',
-		funcion: 'Para corregir los defectos físicos y morales.',
+		funcion: 'Para corregir los defectos físicos, intelectuales y morales.',
 		ver: 'Para la Salud. Corrige defectos en el pensamiento que causa caos a todos. Corrige transgresiones de vidas pasadas. Limpia entorno.',
 		tehilim: 'Tehilim 131:3',
 		m: 0
